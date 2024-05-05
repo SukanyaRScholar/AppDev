@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forgot Password</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	
+	<link rel="stylesheet" type="text/css" href="" media="only screen and (min-device-width: 320px) and (max-device-width: 960px)" />
+
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+<meta name="HandheldFriendly" content="true">
+
+
+<style>
+
+/*body{
+  background-color: #66CDAA;
+  margin: 10px;
+}*/
+
+/*h1{
+	font-size: 1em;
+}*/
+
+.field-group{
+	padding: 10px;
+	align-self: center;
+
+}
+h2{
+	font-weight: : bold;
+	text-align: center;
+}
+
+div.field-group{
+	align-self: center;
+	width: 100%;
+	text-align: center;
+
+}
+
+img{
+  width: 100%;
+  border-radius: 10px;
+ 
+}
+.cent{
+	text-align: center;
+	font-size: 20px;
+	padding: 10px;
+}
+
+footer {
+    
+    bottom: 0;
+    width: 100%;
+    heigh: 60px;
+
+   }
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+	<!-- form is written in body -->
+
+	<form name="frmForgot" id="frmForgot" method="post" onSubmit="return validate_forgot();">
+<header>
+<h1> Oops....</h1>
+
+</header>
+
+
+	<?php if(!empty($success_message)) { ?>
+	<div class="success_message"><?php echo $success_message; ?></div>
+	<?php } ?>
+
+
+	<div id="validation-message">
+		<?php if(!empty($error_message)) { ?>
+		<?php echo $error_message; ?>
+		<?php } ?>
+	</div>
+
+
+
+	<div class="image">
+		<img src="images/forgot.jpg" alt="forgot-password" class="picture">
+	</div>
+	<h2> Reset Here </h2>
+
+	<!-- <div class="field-group">
+		<div><label for="username"><b>Username</b></label></div>
+		<div><input type="text" name="user-login-name" id="user-login-name" class="input-field">  </div>
+	</div>
+	<div class="cent" ><b>--or--</b></div> -->
+	<div class="field-group">
+		<div><label for="email"><b>@Email</b></label></div>
+		<div><input type="text" name="user-email" placeholder="Enter Your email" id="user-email" class="input-field"></div>
+	</div>
+	
+	<div class="field-group">
+		<div><input type="submit" name="forgot-password" id="forgot-password" value="Submit" class="form-submit-button"></div>
+		
+	</div>	
+</form>
+<footer>
+		<p> @2019 - All rights reserved </p>
+		<p ><a href="mailto:email@utdallas.edu" > Email us </a> </p>
+	</footer>
+
+</body>
+</html>

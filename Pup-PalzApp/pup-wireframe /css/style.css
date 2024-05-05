@@ -1,0 +1,60 @@
+header{
+	text-align: center;
+	padding: 2em 0;
+	background-color: crimson;
+	margin-bottom: 2em;
+	color: #ffffff;
+}
+
+body{
+	background-color: white;
+}
+
+h1{
+	font-size: 3em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+header h2{
+	padding: 0 2em;
+	font-weight: normal;
+}
+
+img{
+	width: 100%;
+
+}
+
+.buttons{
+	text-align: center;
+	margin: 3em 0;
+}
+
+.buttons a{
+	min-width: 10em;
+	padding: 1em 0;
+}
+
+
+footer{
+	background-color: crimson;
+	text-align: center;
+	padding: 1em 0;
+	margin-top: 2em;
+	color: white;
+	text-decoration: none;
+	margin: 0 auto;
+}
+
+footer a{
+	color: white;
+
+}
+
+@media screen and (max-width: 992px){
+	.buttons a{
+		margin-bottom: 2em;
+	}
+}
+
